@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Form</title>
+
+    <style>
+
+        body{
+            background-color: #f6f6f6;
+        
+        }
+
+        #register-form{
+            background-color: honeydew;
+            width:max-content;
+            border: aqua solid 2px;
+            padding: 15px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 25px;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        h1{
+            color: crimson;
+            font-weight: 200;
+            text-align: center;
+            
+        }
+
+        #button{
+            align-content: center;
+            padding: 5px;
+            color: rebeccapurple;
+            background-color: #f8f8f8;
+            border:greenyellow solid;
+            
+        }
+
+
+    </style>
+    
+</head>
+<body>
+
+    <form id="register-form" method="post">
+
+        <h1><i><b>Sign Up</b></i></h1>
+
+        Full Name:<br>
+        <input type="text" name="fullname" placeholder="Enter your full name" required autofocus><br><br>
+        
+        Email:<br>
+        <input type="email" name="email" placeholder="Enter your email address" required autofocus><br><br>
+
+        Password:<br>
+        <input type="password" name="password" placeholder="Enter password"  minlength="8" required autofocus><br><br>
+
+        Confirm Password:<br>
+        <input type="password" name="confirm_password" placeholder="Re-enter password" minlength="8" required autofocus><br><br>
+        
+
+        Gender:<br>
+        <input type="radio" name="male" value="male" autofocus> Male
+        <input type="radio" name="female" value="female" autofocus> Female
+        <input type="radio" name="other" value="other" autofocus> Other<br><br>
+        
+
+        Security Question:<br>
+        <select>
+            <option value="first-pet-name">What is your first pet name?</option>
+            <option value="first-job">What was your first job?</option>
+            <option value="nick-name">What is your nick name?</option>
+        </select>
+
+        <br><br>
+
+        <textarea name="answer" rows="6" cols="30" autofocus></textarea><br>
+        
+        <input type="checkbox" name="terms-conditions" value="accept" required> I agree to accept terms and conditions.<br><br><br>
+    
+        <input id="button" type="submit" value="submit">
+    </form>
+</body>
+</html>
